@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="CSS/styledashtest.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="img/GO GYM.png" alt="">
+        <span class="d-none d-lg-block text-light text-nowrap text-sm">Admin Dashboard</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+    
+    <div class="search-bar">
+        <form class="search-form d-flex align-items-center " method="POST" action="#">
+          <input class="w-75" type="text" name="query" placeholder="Search" title="Enter search keyword">
+          <input type="button text-center" class="w-25" value="Cari">
+        </form>
+      </div><!-- End Search Bar -->
+    </header><!-- End Header -->
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="dashboardtest.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Kelola Member</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        
+      </li><!-- End Components Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Kelola Merchandise<i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+      </li><!-- End Forms Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Transaksi</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        
+      </li><!-- End Tables Nav -->
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Dashboard</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+          <div class="row">
+
+            <!-- Sales Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card sales-card">
+
+                
+
+                <div class="card-body">
+                  <h5 class="card-title">Sales <span>| Month</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                        <img src="img/logotshirt.png" alt="">
+                      <i class="bi bi-cart"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>800 Item</h6>
+                      <span class="text-success small pt-1 fw-bold">12%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Sales Card -->
+
+            <!-- Revenue Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card revenue-card">
+
+                
+
+                <div class="card-body">
+                  <h5 class="card-title">Profit <span>| Month</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                        <img src="img/logouang.png" alt="">
+                      <i class="bi bi-currency-dollar"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>Rp 20.923.121</h6>
+                      <span class="text-success small pt-1 fw-bold">20%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Revenue Card -->
+            <!-- Member -->
+            <div class="col-xxl-4 col-md-6">
+                <div class="card info-card revenue-card">
+  
+                  <div class="filter">
+                    <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                    
+                  </div>
+  
+                  <div class="card-body">
+                    <h5 class="card-title">Member Aktif <span>| This Month</span></h5>
+  
+                    <div class="d-flex align-items-center">
+                      <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                        <img src="img/logomember.png" alt="">
+                        <i class="bi bi-currency-dollar"></i>
+                      </div>
+                      <div class="ps-3">
+                        <h6>423 People</h6>
+                        <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+                      </div>
+                    </div>
+                  </div>
+  
+                </div>
+              </div><!-- Member Card -->
+
+           <!-- Verification Card -->
+           <div class="col-xxl-4 col-md-6">
+            <div class="card info-card sales-card">
+
+              
+
+              <div class="card-body">
+                <h5 class="card-title">Verifikasi Pembayaran<span> |Today</span></h5>
+
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <img src="img/logotshirt.png" alt="">
+                    <i class="bi bi-cart"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>5 Payment</h6>
+                    
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div><!-- End Sales Card -->
+            <!-- Recent Sales -->
+            <div class="col-12">
+              <div class="card recent-sales overflow-auto">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Recent Sales <span>| Today</span></h5>
+
+                  <table class="table table-borderless datatable">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Customer</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a href="#">#2457</a></th>
+                        <td>Yemmi Agustin</td>
+                        <td><a href="#" class="text-primary">1 Month Membership</a></td>
+                        <td>Rp 250.000</td>
+                        <td><span class="badge bg-warning">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#2147</a></th>
+                        <td>Velinda Novelia</td>
+                        <td><a href="#" class="text-primary">Hoodie</a></td>
+                        <td>Rp 150.000</td>
+                        <td><span class="badge bg-warning">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#2049</a></th>
+                        <td>Valencia Samuel</td>
+                        <td><a href="#" class="text-primary">Membership 1 Bulan With PT</a></td>
+                        <td>Rp 400.000</td>
+                        <td><span class="badge bg-warning">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#2644</a></th>
+                        <td>Owen Wilianto</td>
+                        <td><a href="#" class="text-primary">Membership 1 Tahun</a></td>
+                        <td>Rp 2.400.000</td>
+                        <td><span class="badge bg-warning">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#2644</a></th>
+                        <td>Jhon Doe</td>
+                        <td><a href="#" class="text-primary">Tumblr</a></td>
+                        <td>Rp 100.000</td>
+                        <td><span class="badge bg-warning">Pending</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a href="#">#2147</a></th>
+                        <td>Velinda Novelia</td>
+                        <td><a href="#" class="text-primary">Membership 1 Bulan</a></td>
+                        <td>Rp 100.000</td>
+                        <td><span class="badge bg-success">Approved</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+            </div><!-- End Recent Sales -->
+
+    
+          </div>
+        </div><!-- End Left side columns -->
+
+        <!-- Right side columns -->
+        <div class="col-lg-4" >
+
+          <!-- Recent Activity -->
+            <div class="card-body bg-light m-2 p-3"  >
+              <h5 class="card-title">To Do List &nbsp;<input type="button" value="+" class="btn btn-outline-primary btn-sm"></h5>
+              <div class="activity">
+
+                <div class="activity-item d-flex ">
+                  <div><input type="checkbox" name="" id="" class="form-check form-check-inline"></div>
+                  <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
+                  <div class="activity-content">
+                    Melakukan Verifikasi Pembayaran
+                  </div>
+                </div><!-- End activity item-->
+
+                <div class="activity-item d-flex">
+                    <div><input type="checkbox" name="" id="" class="form-check form-check-inline"></div>
+                  <i class='bi bi-circle-fill activity-badge text-danger align-self-start'></i>
+                  <div class="activity-content">
+                    Check stock barang
+                  </div>
+                </div><!-- End activity item-->
+
+                <div class="activity-item d-flex">
+                    <div><input type="checkbox" name="" id="" class="form-check form-check-inline"></div>
+                  <i class='bi bi-circle-fill activity-badge text-primary align-self-start'></i>
+                  <div class="activity-content">
+                    Memeriksa dan memperbaiki Bug
+                  </div>
+                </div><!-- End activity item-->
+
+                <div class="activity-item d-flex">
+                    <div><input type="checkbox" name="" id="" class="form-check form-check-inline"></div>
+                  <i class='bi bi-circle-fill activity-badge text-info align-self-start'></i>
+                  <div class="activity-content">
+                    Update promo pada hari raya Natal
+                  </div>
+                </div><!-- End activity item-->
+
+                <div class="activity-item d-flex">
+                    <div><input type="checkbox" name="" id="" class="form-check form-check-inline"></div>
+                  <i class='bi bi-circle-fill activity-badge text-warning align-self-start'></i>
+                  <div class="activity-content">
+                    Menambah cara pembayaran
+                  </div>
+                </div><!-- End activity item-->
+
+                <div class="activity-item d-flex">
+                    <div><input type="checkbox" name="" id="" class="form-check form-check-inline"></div>
+                  <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
+                  <div class="activity-content">
+                    Memeriksa kesehatan Server
+                  </div>
+                </div><!-- End activity item-->
+
+              </div>
+
+            </div>
+          </div><!-- End Recent Activity -->
+
+          
+        </div><!-- End Right side columns -->
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+</body>

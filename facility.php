@@ -8,19 +8,40 @@
     <link rel="stylesheet" href="CSS/style4.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
     <!--  Membuat Navbar -->
     <div class="container-fluid position-relative p-0">
-    <?php include 'navbar.php'; ?>
+        <nav id="bg" class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <div><img id="logo" src="img/GO GYM.png">
+            </div>
+            <a href="" class="navbar-brand p-0">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0" id="nav-item">
+                    <a href="home.php
+                " class="nav-item nav-link">Home</a>
+                    <a href="about.php
+                " class="nav-item nav-link">About Us</a>
+                    <a href="member.php
+                " class="nav-item nav-link">Membership</a>
+                    <a href="facility.php
+                " class="nav-item nav-link active">Facility</a>
+                    <a href="merchan.php
+                " class="nav-item nav-link">Mechandise</a>
+                    <a href="#footer" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="daftar.php
+            " class="btn btn-info rounded-pill py-1 px-40">Sign In/Sign Up</a>
+            </div>
         </nav>
 
         <div class="container-fluid py-5 mb-5 hero-header" id="bg1">
@@ -35,7 +56,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="container">
         <div class="row">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -49,7 +70,8 @@
                         <figcaption>
                             <h5>Resepsionis</h5>
                             <p>Tempat di mana anggota gym dapat melakukan pendaftaran, mendapatkan informasi tentang
-                                jadwal latihan, mendapatkan kartu akses, atau mengajukan pertanyaan kepada staf. </p>
+                                jadwal
+                                latihan, mendapatkan kartu akses, atau mengajukan pertanyaan kepada staf. </p>
                         </figcaption>
                     </figure>
                 </div>
@@ -125,7 +147,7 @@
         </div>
         <div class="row">
             <div class="col-md-4 p-3">
-                <div data-aos="zoom-in"data-aos-duration="1000">
+                <div data-aos="zoom-in" data-aos-duration="1000">
                     <figure>
                         <img src="img/wc.png" alt="Fasilitas 7" class="img-fluid">
                         <figcaption>
@@ -175,7 +197,8 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Company</h4>
-                    <a class="btn btn-link" href="about.php" id="m4">About Us</a>
+                    <a class="btn btn-link" href="about.php
+                " id="m4">About Us</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>

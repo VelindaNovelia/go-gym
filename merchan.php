@@ -173,7 +173,6 @@
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                             <div class="text-center">
                                 <?php
-
                                 if (!$_SESSION['registered_user']) {
                                 ?>
                                     <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="daftar.php" style="background-color: #F1FF46;">Buy Now!</a></div>

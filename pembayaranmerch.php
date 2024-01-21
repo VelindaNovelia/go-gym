@@ -11,7 +11,7 @@
 <body>
     <div class="container">
 
-        <h2>Member Registration Form</h2>
+        <h2>Order Merchandise Form</h2>
         <hr>
         <form id="function" action="tampilan_berhasil_daftar.php" method="post">
             <label for="emailmerch">Email:</label>
@@ -21,12 +21,15 @@
 
             <label for="merch1">Merchandise</label>
             <select name="merch1" id="merch1" onchange="updateTotal()">
-                <option value="pilihan">Pilihan</option>
+                <option value="pilihan">Pilihan Merchandise</option>
                 <option value="T-Shirt Special">T-Shirt Special</option>
                 <option value="Hoodie Spesial">Hoodie Spesial</option>
                 <option value="Tote Bag Spesial">Tote Bag Spesial</option>
                 <option value="Tumblr Spesial">Tumblr Spesial</option>
             </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" onchange="updateTotal()">
 
             <label for="paymentMethod">Payment Method</label>
             <select name="paymentMethod" required>
@@ -37,13 +40,21 @@
                 <option value="gopay">Gopay</option>
             </select>
 
+            <label for="opsiPengiriman">Opsi Pengiriman</label>
+            <select name="opsiPengiriman" id="opsiPengiriman" onchange="updateTotal()" required>
+                <option value="default_opsi">Opsi Pengiriman</option>
+                <option value="jne_express">JNE Express - Rp11.000 (2 Days)</option>
+                <option value="sicepat">Sicepat - Rp15.000 (1 Day)</option>
+                <option value="jnt_express">J&T Express Rp9.000 (3 Days)</option>
+            </select>
+
             <label for="total1">Total:</label>
             <input type="text" id="total1" disabled>
             <input type="hidden" name="totalValue1" id="totalValue1" value="">
 
             <div class="checkbox-container">
                 <input type="checkbox" id="termsCheckbox" required>
-                <label for="termsCheckbox">Saya setuju dengan syarat dan ketentuan.</label>
+                <label for="termsCheckbox">Data pembelian sudah sesuai.</label>
             </div>
 
             <button type="submit" name="merch">Beli</button>
@@ -52,8 +63,11 @@
 
     <script>
         function updateTotal() {
+            var opsiPengirimanSelect = document.getElementById('opsiPengiriman');
             var totalInput = document.getElementById('total1');
             var selectedMerch = document.getElementById('merch1').value;
+            var quantity = document.getElementById('quantity').value;
+            var selectedJasa = opsiPengirimanSelect.options[opsiPengirimanSelect.selectedIndex].value;
 
             var basePrice = 100000;
 
@@ -66,8 +80,26 @@
                 basePrice = 125000;
             }
 
-            // Set total based on base price
-            var total = basePrice;
+            var hargaPengiriman = 0;
+
+            if (selectedJasa !== '' && selectedJasa !== 'default_opsi') {
+                switch (selectedJasa) {
+                    case 'jne_express':
+                        hargaPengiriman = 11000;
+                        break;
+                    case 'sicepat':
+                        hargaPengiriman = 15000;
+                        break;
+                    case 'jnt_express':
+                        hargaPengiriman = 9000;
+                        break;
+                    default:
+                        hargaPengiriman = 0;
+                }
+            }
+
+            // Set total based on base price and quantity
+            var total = basePrice * quantity + hargaPengiriman;
             document.getElementById('totalValue1').value = total;
             // Display total in the total input
             totalInput.value = total;

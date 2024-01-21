@@ -13,185 +13,141 @@
 </head>
 
 <body>
-<?php include 'navbar.php'; ?>
-    
-        
+    <?php include 'navbar.php'; ?>
 
+    <!-- Membership -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
 
-<!-- Membership -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="mb-5">Program GYM</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Sebulan.png">
+                        </div>
 
-            <h1 class="mb-5">Program GYM</h1>
-        </div>
-        <div class="row g-4 justify-content-center">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="package-item">
-                    <div class="overflow-hidden">
-                        <img class="img-fluid" src="img/Sebulan.png">
-                    </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Rp 250.000/Bulan</h3>
 
-                    <div class="text-center p-4">
-                        <h3 class="mb-0">Rp 250.000/Bulan</h3>
-
-                        <p class="text-center">Dapatkan keuntungan membership selama 1 bulan dengan harga murah</p>
+                            <p class="text-center">Dapatkan keuntungan membership selama 1 bulan dengan harga murah</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="package-item">
-                    <div class="overflow-hidden">
-                        <img class="img-fluid" src="img/3Bulan.png">
-                    </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/3Bulan.png">
+                        </div>
 
-                    <div class="text-center p-4">
-                        <h3 class="mb-0">Rp 650.000/3 Bulan</h3>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Rp 650.000/3 Bulan</h3>
 
-                        <p class="text-center">Dapatkan keuntungan membership selama 3 bulan dengan potongan harga hingga 100.000</p>
+                            <p class="text-center">Dapatkan keuntungan membership selama 3 bulan dengan potongan harga hingga 100.000</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="package-item">
-                    <div class="overflow-hidden">
-                        <img class="img-fluid" src="img/Tahun.png">
-                    </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/Tahun.png">
+                        </div>
 
-                    <div class="text-center p-4">
-                        <h3 class="mb-0">Rp 2.400.000/Tahun</h3>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">Rp 2.400.000/Tahun</h3>
 
-                        <p class="text-center">Dapatkan keuntungan membership selama 3 bulan dengan potongan harga hingga 600.000</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="d-flex justify-content-center mb-2" id="btn1">
-<?php
-                
-                if (!$_SESSION['registered_user']) {
-                ?>
-                    <a href="daftar.php" class="btn btn-primary btn-lg rounded-pill py-2 px-40">Sign In</a>
-                <?php
-                } else {
-                ?>
-                    <a href="pembayaran.php" class="btn btn-primary btn-lg rounded-pill py-2 px-40">Buy Now</a>
-                <?php
-                }
-                ?>
-</div>
-<!-- Team -->
-<div class="container-xxl py-5">
-    <div class="container" id="c3">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <blockquote class="blockquote">
-                <p class="h3">Personal Trainer</p>
-                <p class="mb-0">Tak Kenal Maka Tak Sayang</p>
-                <footer class="blockquote-footer m-2">Seseorang <cite title="Source Title"></cite></footer>
-            </blockquote>
-        </div>
-        <div class="row g-4" id="s1">
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item">
-                    <div class="overflow-hidden">
-                        <img class="img-fluid" src="img/valen.png">
-                    </div>
-
-                    <div class="text-center p-4">
-                        <h5 class="mb-0" id="m2">Valencia Samuel</h5>
-                        <small>Yoga Trainer</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item">
-                    <div class="overflow-hidden">
-                        <img class="img-fluid" src="img/owen.png">
-                    </div>
-                    <div class="position-relative d-flex justify-content-center" id="m2">
-                    </div>
-                    <div class="text-center p-4">
-                        <h5 class="mb-0">Owen Willianto</h5>
-                        <small>Functional Fitness Trainer</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item">
-                    <div class="overflow-hidden">
-                        <img class="img-fluid" src="img/velin.png">
-                    </div>
-                    <div class="position-relative d-flex justify-content-center" id="m2">
-                    </div>
-                    <div class="text-center p-4">
-                        <h5 class="mb-0">Velinda Novelia Candra</h5>
-                        <small>Youth Fitness Trainer</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="team-item">
-                    <div class="overflow-hidden">
-                        <img class="img-fluid" src="img/yemmi.png" alt="">
-                    </div>
-                    <div class="position-relative d-flex justify-content-center" id="m2">
-                    </div>
-                    <div class="text-center p-4">
-                        <h5 class="mb-0">Yemmi Agustin</h5>
-                        <small>Strength and Conditioning Trainer</small>
+                            <p class="text-center">Dapatkan keuntungan membership selama 3 bulan dengan potongan harga hingga 600.000</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Footer -->
-<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" id="footer" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-3">Company</h4>
-                <a class="btn btn-link" href="about.php" id="m4">About Us</a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-3">Contact</h4>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>2173004@maranatha.ac.id</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>2173006@maranatha.ac.id</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>2173008@maranatha.ac.id</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>2173012@maranatha.ac.id</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>2173008@maranatha.ac.id</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+123-456-7890</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-3">Operational Hour</h4>
-                <p>Senin-Jumat : 06:00 - 22:00 WIB</p>
-                <p>Sabtu : 06:00 - 21:00 WIB</p>
-                <p>Minggu : 08:00 - 20:00 WIB</p>
-                <h4 class="text-white mb-3">National Holiday</h4>
-                <p>Senin-Jumat : 10:00 - 18:00 WIB</p>
-                <div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-white mb-3">Location</h4>
-                <p>Jl. Cibogo I No.9, Sukawarna, Sukajadi, Kota Bandung, Jawa Barat, 40164</p>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="copyright">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy;2023 <a class="border-bottom" href="#">GO GYM</a>, All Right Reserved.
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+    <div class="d-flex justify-content-center mb-2" id="btn1">
+        <?php
 
-    
+        if (!$_SESSION['registered_user']) {
+        ?>
+            <a href="daftar.php" class="btn btn-primary btn-lg rounded-pill py-2 px-40">Sign In</a>
+        <?php
+        } else {
+        ?>
+            <a href="pembayaran.php" class="btn btn-primary btn-lg rounded-pill py-2 px-40">Buy Now</a>
+        <?php
+        }
+        ?>
+    </div>
+    <!-- Team -->
+    <div class="container-xxl py-5">
+        <div class="container" id="c3">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <blockquote class="blockquote">
+                    <p class="h3">Personal Trainer</p>
+                    <p class="mb-0">Tak Kenal Maka Tak Sayang</p>
+                    <footer class="blockquote-footer m-2">Seseorang <cite title="Source Title"></cite></footer>
+                </blockquote>
+            </div>
+            <div class="row g-4" id="s1">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/valen.png">
+                        </div>
+
+                        <div class="text-center p-4">
+                            <h5 class="mb-0" id="m2">Valencia Samuel</h5>
+                            <small>Yoga Trainer</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/owen.png">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" id="m2">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Owen Willianto</h5>
+                            <small>Functional Fitness Trainer</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/velin.png">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" id="m2">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Velinda Novelia Candra</h5>
+                            <small>Youth Fitness Trainer</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/yemmi.png" alt="">
+                        </div>
+                        <div class="position-relative d-flex justify-content-center" id="m2">
+                        </div>
+                        <div class="text-center p-4">
+                            <h5 class="mb-0">Yemmi Agustin</h5>
+                            <small>Strength and Conditioning Trainer</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <?php include 'footer.php'; ?>
+
 </body>
+
 </html>

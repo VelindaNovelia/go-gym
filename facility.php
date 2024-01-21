@@ -17,32 +17,7 @@
 <body>
     <!--  Membuat Navbar -->
     <div class="container-fluid position-relative p-0">
-        <nav id="bg" class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-            <div><img id="logo" src="img/GO GYM.png">
-            </div>
-            <a href="" class="navbar-brand p-0">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0" id="nav-item">
-                    <a href="home.php
-                " class="nav-item nav-link">Home</a>
-                    <a href="about.php
-                " class="nav-item nav-link">About Us</a>
-                    <a href="member.php
-                " class="nav-item nav-link">Membership</a>
-                    <a href="facility.php
-                " class="nav-item nav-link active">Facility</a>
-                    <a href="merchan.php
-                " class="nav-item nav-link">Mechandise</a>
-                    <a href="#footer" class="nav-item nav-link">Contact</a>
-                </div>
-                <a href="daftar.php
-            " class="btn btn-info rounded-pill py-1 px-40">Sign In/Sign Up</a>
-            </div>
-        </nav>
+        <?php include 'navbar.php'; ?>
 
         <div class="container-fluid py-5 mb-5 hero-header" id="bg1">
             <div class="container py-5">
@@ -192,50 +167,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" id="footer" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Company</h4>
-                    <a class="btn btn-link" href="about.php
-                " id="m4">About Us</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>2173004@maranatha.ac.id</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>2173006@maranatha.ac.id</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>2173008@maranatha.ac.id</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>2173012@maranatha.ac.id</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>2173008@maranatha.ac.id</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+123-456-7890</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Operational Hour</h4>
-                    <p>Senin-Jumat : 06:00 - 22:00 WIB</p>
-                    <p>Sabtu : 06:00 - 21:00 WIB</p>
-                    <p>Minggu : 08:00 - 20:00 WIB</p>
-                    <h4 class="text-white mb-3">National Holiday</h4>
-                    <p>Senin-Jumat : 10:00 - 18:00 WIB</p>
-                    <div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Location</h4>
-                    <p>Jl. Cibogo I No.9, Sukawarna, Sukajadi, Kota Bandung, Jawa Barat, 40164</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy;2023 <a class="border-bottom" href="#">GO GYM</a>, All Right Reserved.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+    <?php include 'footer.php'; ?>
     <script>
         AOS.init();
     </script>

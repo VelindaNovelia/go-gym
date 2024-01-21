@@ -1,37 +1,32 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Male_Fashion Template">
-    <meta name="keywords" content="Male_Fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Merchandise GoGym</title>
-
-
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="CSS/style4.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </style>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="CSS/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="CSS/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="CSS/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="CSS/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="CSS/nice-select.css" type="text/css">
     <link rel="stylesheet" href="CSS/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="CSS/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="CSS/style11.css" type="text/css">
     <link rel="stylesheet" href="CSS/style9.css" type="text/css">
     <link rel="stylesheet" href="CSS/style10.css" type="text/css">
-
 </head>
 
 <body>
     <?php include 'navbar.php'; ?>
-
     <!-- Hero Section Begin -->
     <section class="hero">
         <div class="hero__slider owl-carousel">
@@ -79,10 +74,8 @@
             </div>
     </section>
     <!-- Hero Section End -->
-
     <br>
     <br>
-
     <!-- Product Section Begin -->
     <h1 class="tengah" id="catalog">Our Merchandise</h1>
     <section class="py-5">
@@ -226,51 +219,8 @@
     </section>
     <!-- Product Section End -->
 
-    <!-- Footer Section Begin -->
-    <div class="fluid bg-dark text-primary footer pt-5 mt-5 wow fadeIn" id="footer" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Company</h4>
-                    <a class="btn btn-link" href="about.php" style="color:#2264C5"><u>About Us</u></a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2 text-white">2173004@maranatha.ac.id</p>
-                    <p class="mb-2 text-white">2173006@maranatha.ac.id</p>
-                    <p class="mb-2 text-white">2173008@maranatha.ac.id</p>
-                    <p class="mb-2 text-white">2173012@maranatha.ac.id</p>
-                    <p class="mb-2 text-white">2173008@maranatha.ac.id</p>
-                    <p class="mb-2 text-white">+123-456-7890</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Operational Hour</h4>
-                    <p class="text-white">Senin-Jumat : 06:00 - 22:00 WIB</p>
-                    <p class="text-white">Sabtu : 06:00 - 21:00 WIB</p>
-                    <p class="text-white">Minggu : 08:00 - 20:00 WIB</p>
-                    <h4 class="text-white mb-3">National Holiday</h4>
-                    <p class="text-white">Senin-Jumat : 10:00 - 18:00 WIB</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Location</h4>
-                    <p class="text-white">Jl. Cibogo I No.9, Sukawarna, Sukajadi, Kota Bandung, Jawa Barat, 40164</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div style="color: white;" class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy;2023 <a class="border-bottom" style="color:#2264C5 ;" href="#">GO GYM</a>, All Right Reserved.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-
-    </script>
-    <!-- Footer Section End -->
+    <!-- Footer -->
+    <?php include 'footer.php'; ?>
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>

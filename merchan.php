@@ -20,9 +20,11 @@
     <!-- Css Styles -->
     <link rel="stylesheet" href="CSS/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="CSS/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="CSS/style11.css" type="text/css">
-    <link rel="stylesheet" href="CSS/style9.css" type="text/css">
-    <link rel="stylesheet" href="CSS/style10.css" type="text/css">
+
+    <link rel="stylesheet" href="CSS/style_merch.css" type="text/css">
+    
+    <!-- <link rel="stylesheet" href="CSS/style9.css" type="text/css"> -->
+    <!-- <link rel="stylesheet" href="CSS/style10.css" type="text/css"> -->
 </head>
 
 <body>

@@ -66,7 +66,7 @@
 
             <div class="checkbox-container">
                 <input type="checkbox" id="termsCheckbox" required>
-                <label for="termsCheckbox">Saya setuju dengan syarat dan ketentuan.</label>
+                <label for="termsCheckbox">Data pembelian sudah sesuai.</label>
             </div>
 
             <button type="submit" name="member">Daftar</button>

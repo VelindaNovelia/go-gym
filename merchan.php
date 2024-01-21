@@ -151,15 +151,14 @@
                 <div class="col mb-5">
                     <div class="card h-100" style="background-color: #014638;">
                         <!-- Product image-->
-                        <img class="card-img-top" src="img/goodiebag.png" alt="..." style="object-fit: fill;">
+                        <img class="card-img-top" src="img/merchan4.png " alt="...">
                         <!-- Product details-->
-                        <div class="card-body p-4" style="color: white;">
+                        <div class="card-body p-4">
                             <div class="text-center" style="color: white;">
                                 <!-- Product name-->
                                 <h5 class="fw-bolder" style="color: white;">Tote Bag Special <br>GO GYM</h5>
                                 <!-- Product price-->
                                 Rp.125.000,00
-
                             </div>
                         </div>
                         <!-- Product actions-->

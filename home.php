@@ -97,6 +97,8 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -109,10 +111,16 @@
                             <img src="img/cardio.jpeg" class="d-block w-100">
                         </div>
                         <div class="carousel-item">
+                            <img src="img/serbaguna.png" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
                             <img src="img/yoga.png" class="d-block w-100">
                         </div>
                         <div class="carousel-item">
                             <img src="img/wc.png" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/ruang makan.png" class="d-block w-100">
                         </div>
                         <div class="carousel-item">
                             <img src="img/sauna.png" class="d-block w-100">

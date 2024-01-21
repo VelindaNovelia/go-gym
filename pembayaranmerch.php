@@ -10,12 +10,11 @@
 
 <body>
     <div class="container">
-
         <h2>Order Merchandise Form</h2>
         <hr>
-        <form id="function" action="tampilan_berhasil_daftar.php" method="post">
+        <form id="function" action="" method="post">
             <label for="emailmerch">Email:</label>
-            <input type="emailmerch" name="emailmerch" required>
+            <input type="email" name="emailmerch" required>
             <label for="alamat">Alamat</label>
             <input type="text" name="alamat" required>
 
@@ -59,6 +58,41 @@
 
             <button type="submit" name="merch">Beli</button>
         </form>
+
+        <?php
+        include "function.php";
+
+        if (isset($_POST['merch'])) {
+            // Retrieve and process form data
+            $emailmerch = mysqli_real_escape_string($conn, $_POST['emailmerch']);
+            $alamat = mysqli_real_escape_string($conn, $_POST['alamat']);
+            $merch1 = mysqli_real_escape_string($conn, $_POST['merch1']);
+            $quantity = mysqli_real_escape_string($conn, $_POST['quantity']);
+            $paymentMethod = mysqli_real_escape_string($conn, $_POST['paymentMethod']);
+            $opsiPengiriman = mysqli_real_escape_string($conn, $_POST['opsiPengiriman']);
+            $totalValue1 = mysqli_real_escape_string($conn, $_POST['totalValue1']);
+
+            // Insert data into keluar table
+            $insertQuery = "INSERT INTO keluar (idbarang, alamat, tanggal, pembeli, jenis_merchandise, payment_method, opsi_pengiriman, qty, total) 
+                    VALUES ('$merch1', '$alamat', NOW(), '$emailmerch', '$merch1', '$paymentMethod', '$opsiPengiriman', '$quantity', '$totalValue1')";
+
+            if (mysqli_query($conn, $insertQuery)) {
+                // Update stock in stock table
+                $updateStockQuery = "UPDATE stock SET stok = stok - $quantity WHERE namabarang = '$merch1'";
+
+                if (mysqli_query($conn, $updateStockQuery)) {
+                    echo "Data inserted successfully. Stock updated.";
+                    header("Location: tampilan_berhasil_daftar.php");
+                    exit();
+                } else {
+                    echo "Error updating stock: " . mysqli_error($conn);
+                }
+            } else {
+                echo "Error inserting data: " . mysqli_error($conn);
+            }
+        }
+        ?>
+
     </div>
 
     <script>
@@ -105,10 +139,6 @@
             totalInput.value = total;
         }
     </script>
-
-    <?php
-    include "function.php";
-    ?>
 </body>
 
 </html>

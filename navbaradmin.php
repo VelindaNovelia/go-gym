@@ -30,25 +30,25 @@
 
     <li class="nav-item">
       <a class="nav-link collapsed" href="admin_merch.php">
-        <i class="bi bi-journal-text"></i><span>Kelola Merchandise<i class="bi bi-chevron-down ms-auto"></i>
+        <i class="bi bi-journal-text"></i><span>Stock Merchandise<i class="bi bi-chevron-down ms-auto"></i>
       </a>
     <li class="nav-item">
       <a class="nav-link collapsed" href="fitur_tambahstock.php">
-        <i class="bi bi-journal-text"></i><span>Stock Merchandise<i class="bi bi-chevron-down ms-auto"></i>
+        <i class="bi bi-journal-text"></i><span>Input Stock Merchandise<i class="bi bi-chevron-down ms-auto"></i>
       </a>
     </li>
     <li class="nav-item">
       <a class="nav-link collapsed" href="fitur_penjualan.php">
-        <i class="bi bi-journal-text"></i><span>Penjualan Merchanise<i class="bi bi-chevron-down ms-auto"></i>
+        <i class="bi bi-journal-text"></i><span>Histori Transaksi Merchandise<i class="bi bi-chevron-down ms-auto"></i>
       </a>
     </li>
     </li><!-- End Merch Nav -->
 
-    <li class="nav-item">
+    <!-- <li class="nav-item">
       <a class="nav-link collapsed" href="admin_transaksi_merchan.php">
         <i class="bi bi-layout-text-window-reverse"></i><span>Histori Merchandise</span><i class="bi bi-chevron-down ms-auto"></i>
       </a>
-    </li><!-- End Tranksaksi Nav -->
+    </li>End Tranksaksi Nav -->
   </ul>
 
 </aside><!-- End Sidebar-->

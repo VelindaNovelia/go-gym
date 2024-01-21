@@ -61,14 +61,14 @@
                                 
                                 while ($tampil = mysqli_fetch_array($ambildata)) {
                                     echo "
-                            <tr>
-                                <td>$tampil[nama]</td>
-                                <td>$tampil[tipe]</td>
-                                <td>$tampil[trainer]</td>
-                                <td>$tampil[pembayaran]</td>
-                                <td>$tampil[total]</td>
-                                <td>$tampil[tglmul]</td>
-                            </tr>";
+                                    <tr>
+                                        <td>$tampil[nama]</td>
+                                        <td>$tampil[tipe]</td>
+                                        <td>$tampil[trainer]</td>
+                                        <td>$tampil[pembayaran]</td>
+                                        <td>$tampil[total]</td>
+                                        <td>$tampil[tglmul]</td>
+                                    </tr>";
                                 }
                                 ?>
 

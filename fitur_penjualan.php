@@ -7,7 +7,7 @@ require 'function.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelola Merchandise</title>
+    <title>Histori Transaksi Merchandise</title>
     <link rel="stylesheet" href="CSS/styledashtest.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -29,38 +29,42 @@ require 'function.php';
         <div class="card">
             <div class="card-body">
                 <div class="pagetitle">
-                    <h1>Penjualan Merchandise</h1>
+                    <h1>Histori Transaksi Merchandise</h1>
                     <div class="container">
                         <div class="pt-3 pb-3 d-flex justify-content-end">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                        Barang Keluar
-                        </button>
                         </div>
                         <table class="table text-center table-striped table-bordered">
                             <thead class="thead table-dark">
-                                <th>No Order</th>
-                                <th>ID barang</th>
+                                <th>ID Keluar</th>
+                                <th>ID Barang</th>
+                                <th>Alamat</th>
                                 <th>Tanggal</th>
                                 <th>Pembeli</th>
-                                <th>Quantitas</th>
+                                <th>Jenis Merchandise</th>
+                                <th>Payment Method</th>
+                                <th>Opsi Pengiriman</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
 
                             </thead>
                             <tbody>
                                 <?php
-                                    $ambildata = mysqli_query($conn, "select * from keluar");
-                                    while ($tampil = mysqli_fetch_array($ambildata)) {
-                                        echo "
-                                        <tr>
-                                            <td>$tampil[idkeluar]</td>
-                                            <td>$tampil[idbarang]</td>
-                                            <td>$tampil[tanggal]</td>
-                                            <td>$tampil[pembeli]</td>
-                                            <td>$tampil[qty]</td>
-                                            
-                                        </tr>";
-
-                                    
-                                    } 
+                                $ambildata = mysqli_query($conn, "SELECT * FROM keluar");
+                                while ($tampil = mysqli_fetch_array($ambildata)) {
+                                    echo "
+                                    <tr>
+                                        <td>$tampil[idkeluar]</td>
+                                        <td>$tampil[idbarang]</td>
+                                        <td>$tampil[alamat]</td>
+                                        <td>$tampil[tanggal]</td>
+                                        <td>$tampil[pembeli]</td>
+                                        <td>$tampil[jenis_merchandise]</td>
+                                        <td>$tampil[payment_method]</td>
+                                        <td>$tampil[opsi_pengiriman]</td>
+                                        <td>$tampil[qty]</td>
+                                        <td>$tampil[total]</td>
+                                    </tr>";
+                                }
                                 ?>
 
                             </tbody>
@@ -71,42 +75,5 @@ require 'function.php';
         </div>
     </main>
 </body>
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Penjualan Merch</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <!-- Modal body -->
-      <form action="function.php" method="post">
-        <div class="modal-body">
-          <select name="barangnya" id="">
-            <?php 
-            $ambildata =mysqli_query($conn, "select * from stock");
-            while($fetcharray=mysqli_fetch_array($ambildata)) {
-            $namabarang=$fetcharray['namabarang'];
-            $idbarang=$fetcharray['idbarang'];
-                
-            ?>
-            <option value="<?=$idbarang;?>" ><?=$namabarang?></option>
-            <?php
-            }
-            ?>
-          </select>
-          <hr>
-          <input type="text" name="pembeli" placeholder="pembeli" class="form-control" required>
-          <hr>
-          <input type="number"  name="qty" placeholder="Quantity" class="form-control" required>
-          <hr>
-          <button type="submit" name="barangkeluar" class="btn btn-primary">Submit</button>
-        </div>
-      </form>
-
-    </div>
-  </div>
-</div>
 </html>

@@ -29,7 +29,7 @@ require 'function.php';
         <div class="card">
             <div class="card-body">
                 <div class="pagetitle">
-                    <h1>Tambah Stock</h1>
+                    <h1>Stock Merchandise</h1>
                     <div class="container">
                         <div class="pt-3 pb-3 d-flex justify-content-end">
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">

@@ -41,7 +41,6 @@ function addNewUser(String $name, String $email, String $password): int
         $result = 1;
     } else {
         $link->rollBack();
-    
     }
     $link = null;
     return $result;
@@ -59,7 +58,13 @@ if (isset($loginPressed)) {
             $_SESSION['registered_user'] = true;
             $_SESSION['name'] = $user->name;
             $_SESSION['email'] = $user->email;
-            header('location: home.php');
+            if ($user['role'] == 'admin') {
+                header('location: dashboardtest.php');
+            } else {
+                header('location: home.php');
+            }
+        } else {
+            echo '<div class="d-flex justify-content-center valided">Invalid email or password</div>';
         }
     }
 }
@@ -75,7 +80,7 @@ if (isset($submitPressed)) {
     } elseif ($password != $confirmPassword) {
         echo '<div class= "d-flex justify-content-center valided">Password not match</div>';
     } else {
-        
+
         addNewUser($name, $email, $password);
     }
 }
@@ -87,7 +92,7 @@ if (isset($submitPressed)) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login/Sign Up</title>
     <link rel="stylesheet" href="CSS/style1.css">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -174,7 +179,5 @@ if (isset($submitPressed)) {
         </div>
     </div>
 </body>
-
-
 
 </html>

@@ -64,6 +64,7 @@ if(isset($_POST["barangkeluar"])){
 }
 
 if (isset($_POST["member"])) {
+        
     $email = $_POST["email"];
     $trainerName = (isset($_POST['personalTrainer']) && $_POST['personalTrainer'] == 'Yes') ? $_POST['trainerName'] : '-';
     $duration = $_POST['duration'];

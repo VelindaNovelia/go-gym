@@ -71,7 +71,7 @@
             $paymentMethod = mysqli_real_escape_string($conn, $_POST['paymentMethod']);
             $opsiPengiriman = mysqli_real_escape_string($conn, $_POST['opsiPengiriman']);
             $totalValue1 = mysqli_real_escape_string($conn, $_POST['totalValue1']);
-
+            
             // Insert data into keluar table
             $insertQuery = "INSERT INTO keluar (idbarang, alamat, tanggal, pembeli, jenis_merchandise, payment_method, opsi_pengiriman, qty, total) 
                     VALUES ('$merch1', '$alamat', NOW(), '$emailmerch', '$merch1', '$paymentMethod', '$opsiPengiriman', '$quantity', '$totalValue1')";
@@ -91,6 +91,7 @@
                 echo "Error inserting data: " . mysqli_error($conn);
             }
         }
+        
         ?>
 
     </div>

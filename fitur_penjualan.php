@@ -36,7 +36,6 @@ require 'function.php';
                         <table class="table text-center table-striped table-bordered">
                             <thead class="thead table-dark">
                                 <th>ID Keluar</th>
-                                <th>ID Barang</th>
                                 <th>Alamat</th>
                                 <th>Tanggal</th>
                                 <th>Pembeli</th>
@@ -54,7 +53,6 @@ require 'function.php';
                                     echo "
                                     <tr>
                                         <td>$tampil[idkeluar]</td>
-                                        <td>$tampil[idbarang]</td>
                                         <td>$tampil[alamat]</td>
                                         <td>$tampil[tanggal]</td>
                                         <td>$tampil[pembeli]</td>

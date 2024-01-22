@@ -65,7 +65,7 @@
                                 <p style="color: white">Unleash your sporty
                                     side with our trendy tote bags designed
                                     for champions.</p>
-                                <a href="#product" class="primary-btn rounded-pill" style="background-color: #014638; color: white;">Shop
+                                <a href="#catalog" class="primary-btn rounded-pill" style="background-color: #014638; color: white;">Shop
                                     now</a>
                                 <div>
                                 </div>
